@@ -37,7 +37,7 @@ function init() {
 
     // Arka plan resmi
     const textureLoader = new THREE.TextureLoader();
-    textureLoader.load('background.jpg', 
+    textureLoader.load('https://github.com/pangulevic324345/dogum-gunu-surpriz/blob/69585680a7058f7c1257f7146a8f38b7fedc457a/background.jpg', 
         (texture) => {
             scene.background = texture;
         },
@@ -148,7 +148,7 @@ function createPhoto() {
 
     // Fotoğraf
     const photoGeometry = new THREE.PlaneGeometry(1.7, 2.2);
-    const photoTexture = new THREE.TextureLoader().load('photo.jpg',
+    const photoTexture = new THREE.TextureLoader().load('https://github.com/pangulevic324345/dogum-gunu-surpriz/blob/69585680a7058f7c1257f7146a8f38b7fedc457a/photo.jpg',
         () => {},
         undefined,
         () => {
