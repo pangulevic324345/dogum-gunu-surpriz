@@ -37,7 +37,7 @@ function init() {
 
     // Arka plan resmi
     const textureLoader = new THREE.TextureLoader();
-    textureLoader.load('assets/images/background.jpg', 
+    textureLoader.load('background.jpg', 
         (texture) => {
             scene.background = texture;
         },
@@ -148,7 +148,7 @@ function createPhoto() {
 
     // Fotoğraf
     const photoGeometry = new THREE.PlaneGeometry(1.7, 2.2);
-    const photoTexture = new THREE.TextureLoader().load('assets/images/photo.jpg',
+    const photoTexture = new THREE.TextureLoader().load('photo.jpg',
         () => {},
         undefined,
         () => {
