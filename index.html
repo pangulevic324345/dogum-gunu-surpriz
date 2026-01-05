@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İyi Ki Doğdun Aşkım! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">Yükleniyor... 💕</div>
+    <div id="canvas-container"></div>
+    <div id="birthday-message">🎉 İyi Ki Doğdun Aşkım! 🎉</div>
+    <div id="instructions">
+        🕯️ Mumları söndürmek için tıkla | 💌 Zarfı okumak için tıkla | 🖱️ Fareyle sahneyi döndür
+    </div>
+
+    <div id="message-overlay">
+        <div class="message-content">
+            <h2>💌 Sevgili Aşkım,</h2>
+            <p>
+                Bugün senin özel günün ve ne kadar şanslı olduğumu bir kez daha hatırlıyorum. 
+                Sen benim hayatımın en güzel hediyesisin. 
+                Her gün seninle geçirdiğim an bir mucize.
+                <br><br>
+                Uzakta olmamız bizi birbirimizden ayıramaz. 
+                Kalbim her zaman seninle. 
+                Doğum günün kutlu olsun canım, seni çok seviyorum! ❤️
+                <br><br>
+                <strong>BURAYA KENDİ MEKTUBUNU YAZACAKSIN!</strong>
+            </p>
+            <button class="close-btn" onclick="closeMessage()">💕 Kapat</button>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="assets/music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
